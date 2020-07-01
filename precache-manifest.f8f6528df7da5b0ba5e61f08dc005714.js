@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27e7ec891aa38444ecccbb5b4e3d4d68",
+    "revision": "f9f6bb254dd10e48e7cd0c2fa5185972",
     "url": "/isolation-board-game/index.html"
   },
   {
-    "revision": "bed68d288fe76476f7b9",
+    "revision": "5f77b7b939aafdf54219",
     "url": "/isolation-board-game/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "5a4d6683485f1c6889f9",
+    "revision": "d7a62abb63c2a4695daa",
     "url": "/isolation-board-game/static/css/main.070e0e4f.chunk.css"
   },
   {
-    "revision": "bed68d288fe76476f7b9",
-    "url": "/isolation-board-game/static/js/2.5f5f45b0.chunk.js"
+    "revision": "5f77b7b939aafdf54219",
+    "url": "/isolation-board-game/static/js/2.59b1a9c8.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/isolation-board-game/static/js/2.5f5f45b0.chunk.js.LICENSE.txt"
+    "url": "/isolation-board-game/static/js/2.59b1a9c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5a4d6683485f1c6889f9",
-    "url": "/isolation-board-game/static/js/main.de4a8b4f.chunk.js"
+    "revision": "d7a62abb63c2a4695daa",
+    "url": "/isolation-board-game/static/js/main.c5461369.chunk.js"
   },
   {
     "revision": "1ab9354040bf44e66bc6",
