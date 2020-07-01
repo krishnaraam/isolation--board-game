@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Row, Col, Container } from 'react-bootstrap'
+import { Form, Container } from 'react-bootstrap'
 
 class GameConfigurationForm extends React.Component {
     render() {

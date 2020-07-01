@@ -39,11 +39,11 @@ function App() {
       </Nav>
     </Navbar>
 
-      <Switch>
+      {/* <Switch>
         <Route path="/home">
           <GameConfigurationForm></GameConfigurationForm>
         </Route>
-      </Switch>
+      </Switch> */}
     </BrowserRouter>
   );
 }
