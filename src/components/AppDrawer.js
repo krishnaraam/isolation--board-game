@@ -4,20 +4,15 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import SettingsIcon from '@material-ui/icons/Settings';
-import InfoIcon from '@material-ui/icons/Info';
+import GameConfig from './GameConfig';
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: '#424242'
   },
   drawerHeader: {
     display: 'flex',
@@ -74,6 +70,9 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
+  componentColor: {
+    backgroundColor:'#424242'
+  }
 }));
 
 export default function PersistentDrawerLeft() {
@@ -97,7 +96,7 @@ export default function PersistentDrawerLeft() {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar style={{backgroundColor:'#424242'}}>
+        <Toolbar className={classes.componentColor}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -107,7 +106,7 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" noWrap style={{fontSize:35, paddingLeft:'25px', fontFamily: '"Times New Roman", Times, serif'}}>
             Isolation Game
           </Typography>
         </Toolbar>
@@ -124,18 +123,11 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === 'ltr' ? <ChevronLeftIcon style={{color:'white'}}/> : <ChevronRightIcon />}
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {['Configuration', 'About'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{text === 'Configuration' ? <SettingsIcon /> : <InfoIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
+         <GameConfig className={classes.componentColor}></GameConfig>
       </Drawer>
     </div>
   );
