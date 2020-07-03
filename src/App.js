@@ -1,51 +1,64 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Navbar, Nav} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import GameConfigurationForm from './components/GameConfigurationForm';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Paper, Tabs, Tab } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { Switch, BrowserRouter, Route } from 'react-router-dom';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+export default function App() {
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
-function App() {
+  const useStyles = makeStyles({
+    root: {
+      flexGrow: 1,
+    },
+  });
+
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const theme = React.useMemo(
+    () =>
+      createMuiTheme({
+        palette: {
+          type: prefersDarkMode ? 'dark' : 'light',
+        },
+      }),
+    [prefersDarkMode],
+  );
+
   return (
-    <BrowserRouter>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home" style={{fontSize:"30px"}}>Isolation Board</Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/home" className="nav-items">Game</Nav.Link>
-        <Nav.Link href="/features" className="nav-items">Rules</Nav.Link>
-        <Nav.Link href="/pricing" className="nav-items">Algorithms Used</Nav.Link>
-      </Nav>
-    </Navbar>
+   
+      <BrowserRouter>
+       <ThemeProvider theme={theme}>
+      <CssBaseline/>
+      <Paper className={classes.root}>
+      <Tabs 
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          centered
+        >
+         <Tab value="/game" style={{fontWeight: "bold", color: "white"}} label="Isolation Game" />
+          <Tab style={{fontWeight: "bold", color: "white"}} label="Rules" />
+          <Tab style={{fontWeight: "bold", color: "white"}} label="About" />
+          
+        </Tabs>
+      </Paper>
+    </ThemeProvider>
 
-      {/* <Switch>
-        <Route path="/home">
-          <GameConfigurationForm></GameConfigurationForm>
+      <Switch>
+        <Route path="/game">
+        <h1>Hey</h1>
         </Route>
-      </Switch> */}
-    </BrowserRouter>
+      </Switch>
+      </BrowserRouter>
+
   );
 }
-
-export default App;

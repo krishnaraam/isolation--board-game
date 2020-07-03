@@ -1,4 +1,4 @@
-.nav-items
-{
-  font-size: large;
+.nav-items {
+  background-color: black;
+  flex-grow: 1;
 }
