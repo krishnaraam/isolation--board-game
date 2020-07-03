@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/isolation-board-game/precache-manifest.f231110507139abe870039e24296d05e.js"
+  "/isolation-board-game/precache-manifest.f55ab171b66e1803c5115e299ac22746.js"
 );
 
 self.addEventListener('message', (event) => {
