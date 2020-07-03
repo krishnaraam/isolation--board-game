@@ -1,26 +1,22 @@
 {
   "files": {
-    "main.css": "/isolation-board-game/static/css/main.070e0e4f.chunk.css",
-    "main.js": "/isolation-board-game/static/js/main.c5461369.chunk.js",
-    "main.js.map": "/isolation-board-game/static/js/main.c5461369.chunk.js.map",
+    "main.css": "/isolation-board-game/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/isolation-board-game/static/js/main.5e7db4b4.chunk.js",
+    "main.js.map": "/isolation-board-game/static/js/main.5e7db4b4.chunk.js.map",
     "runtime-main.js": "/isolation-board-game/static/js/runtime-main.acc47293.js",
     "runtime-main.js.map": "/isolation-board-game/static/js/runtime-main.acc47293.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/isolation-board-game/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.59b1a9c8.chunk.js": "/isolation-board-game/static/js/2.59b1a9c8.chunk.js",
-    "static/js/2.59b1a9c8.chunk.js.map": "/isolation-board-game/static/js/2.59b1a9c8.chunk.js.map",
+    "static/js/2.480c68c9.chunk.js": "/isolation-board-game/static/js/2.480c68c9.chunk.js",
+    "static/js/2.480c68c9.chunk.js.map": "/isolation-board-game/static/js/2.480c68c9.chunk.js.map",
     "index.html": "/isolation-board-game/index.html",
-    "precache-manifest.f8f6528df7da5b0ba5e61f08dc005714.js": "/isolation-board-game/precache-manifest.f8f6528df7da5b0ba5e61f08dc005714.js",
+    "precache-manifest.dd4b85d070ac891b32c7fc42c3929c8f.js": "/isolation-board-game/precache-manifest.dd4b85d070ac891b32c7fc42c3929c8f.js",
     "service-worker.js": "/isolation-board-game/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/isolation-board-game/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.070e0e4f.chunk.css.map": "/isolation-board-game/static/css/main.070e0e4f.chunk.css.map",
-    "static/js/2.59b1a9c8.chunk.js.LICENSE.txt": "/isolation-board-game/static/js/2.59b1a9c8.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/isolation-board-game/static/media/logo.5d5d9eef.svg"
+    "static/css/main.5ecd60fb.chunk.css.map": "/isolation-board-game/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.480c68c9.chunk.js.LICENSE.txt": "/isolation-board-game/static/js/2.480c68c9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.acc47293.js",
-    "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.59b1a9c8.chunk.js",
-    "static/css/main.070e0e4f.chunk.css",
-    "static/js/main.c5461369.chunk.js"
+    "static/js/2.480c68c9.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.5e7db4b4.chunk.js"
   ]
 }
